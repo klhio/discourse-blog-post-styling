@@ -1,7 +1,17 @@
 {
   "name": "Blog Post Styling",
-  "about_url": "https://meta.discourse.org/t/blog-post-styling/110841",
-  "license_url": "https://github.com/tshenry/discourse-blog-post-styling/blob/master/LICENSE",
   "component": true,
-  "minimum_discourse_version": "2.5.0.beta4"
+  "license_url": "https://github.com/klhio/discourse-blog-post-styling/blob/master/LICENSE",
+  "about_url": "https://meta.discourse.org/t/blog-post-styling/110841",
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": "2.5.0.beta4",
+  "maximum_discourse_version": null,
+  "assets": {
+  },
+  "color_schemes": {
+  },
+  "modifiers": {
+  },
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
 }

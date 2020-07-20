@@ -77,6 +77,21 @@ $split-values: str-split($values, ",");
 }
 
 %blog-category {
+  #topic-footer-buttons > div.topic-footer-main-buttons > button.btn-primary.create, .btn-flat.reply {
+    display: none;
+  }
+
+  #topic-footer-buttons, .gap  {
+    margin: 0 auto;
+  }
+
+  #topic-footer-buttons, .small-action  {
+    max-width: 720px;
+  }
+
+  .gap {
+    width: 820px;
+  }
   .topic-timeline {
     display: none;
   }
@@ -374,3 +389,4 @@ $split-values: str-split($values, ",");
     }
   }
 }
+
