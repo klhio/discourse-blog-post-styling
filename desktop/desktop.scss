@@ -77,29 +77,33 @@ $split-values: str-split($values, ",");
 }
 
 %blog-category {
-  #topic-footer-buttons > div.topic-footer-main-buttons > button.btn-primary.create, .btn-flat.reply {
+  #topic-footer-buttons {
+    width: calc(690px + (11px * 2));
+    margin: auto;
+    margin-bottom: 5rem;
+
+    .topic-notifications-button {
+      display: none;
+    }
+
+    &> div.topic-footer-main-buttons > button.btn-primary.create {
+      display: none;
+    }
+  }
+
+  .post-stream .gap, .btn-flat.reply, .topic-timeline {
     display: none;
-  }
-
-  #topic-footer-buttons, .gap  {
-    margin: 0 auto;
-  }
-
-  #topic-footer-buttons, .small-action  {
-    max-width: 720px;
   }
 
   .gap {
     width: 820px;
-  }
-  .topic-timeline {
-    display: none;
   }
 
   #topic-title {
     display: flex;
     justify-content: center;
     .title-wrapper {
+      margin-top: 2rem;
       width: calc(690px + (11px * 2));
     }
   }
@@ -183,8 +187,13 @@ $split-values: str-split($values, ",");
       }
       .contents {
         border-top: 1px solid $primary-low;
+        border-bottom: 1px solid $primary-low;
         margin-left: -25px;
         padding: 15px;
+
+        .post-menu-area {
+          margin-bottom: 0;
+        }
       }
       .topic-map {
         margin: 20px -12px 20px -38px;
@@ -247,9 +256,12 @@ $split-values: str-split($values, ",");
 
   // Center and style other post components
   .small-action,
-  .topic-status-info,
   .signup-cta {
     margin: 0 auto;
+  }
+
+  .topic-status-info {
+    display: none;
   }
 
   .small-action {
